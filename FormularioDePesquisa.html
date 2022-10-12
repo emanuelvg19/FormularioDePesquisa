@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Formulário de Pesquisa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <div class="formulario">
+  <h1 id="title">Formulário de Pesquisa</h1>
+    <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    <form action='https://register-demo.freecodecamp.org' id="survey-form">
+      <fieldset>
+        <label id="name-label">Nome completo 
+          <input type="text" name="name" required id="name" placeholder="Digite seu nome"/></label>
+        <label id="email-label">E-mail 
+          <input type="email" name="email" required id="email" placeholder="Digite seu e-mail" /></label>
+        <label id="number-label">Idade (opcional) 
+          <input type="number" name="age" min="13" max="99" id="number" placeholder="Idade" />
+          <label>Qual opção melhor descreve sua função atual?
+          <select name="referrer" id="dropdown">
+            <option value="">Selecione a função atual</option>
+            <option value="1">Aluno</option>
+            <option value="2">Trabalho em tempo integral</option>
+            <option value="3">Aprendiz em tempo integral</option>
+            <option value="4">Prefiro não dizer</option>
+            <option value="5">Outro</option>
+          </select>
+        </label>
+        <br>
+        <label>Você recomendaria o freeCodeCamp a um amigo?
+          <label><input type="radio" name="account-type" class="inline" value="definitivamente" checked /> Definitivamente</label>
+          <label><input type="radio" name="account-type" class="inline" value="talvez" /> Pode ser</label>
+          <label><input type="radio" name="account-type" class="inline" value="nao" /> Não tenho certeza</label>
+          <br>
+        </label>
+            <legend>O que você gostaria de ver melhorado?</legend><br>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="front-end" > <label>Projetos front-end</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="back-end" > <label>Projetos de back-end</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="dados"> <label>Visualização de dados</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="desafios" > <label>Desafios</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="codigo-aberto" > <label>Comunidade de código aberto</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="gitter" > <label>Salas de ajuda do Gitter</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="videos" > <label>Vídeos</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="encontro" > <label>Encontros da Cidade</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="wiki" > <label>Wiki</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="forum" > <label>Fórum</label></div>
+            <div class="imput-botao"><input type="checkbox" class="inline2" value="cursos" > <label>Cursos adicionais</label></div>
+      </fieldset>
+      <label>Algum comentário ou sugestão?
+          <textarea name="bio" rows="3" cols="30" placeholder="Digite seu comentário aqui..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Enviar" id="submit" class="botao" />
+    </div>
+</body>
+</html>
